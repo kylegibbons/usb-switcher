@@ -1,0 +1,3 @@
+/workspaces/usb-switcher/build/pioasm/CMakeFiles/rebuild_cache.dir
+/workspaces/usb-switcher/build/pioasm/CMakeFiles/edit_cache.dir
+/workspaces/usb-switcher/build/pioasm/CMakeFiles/pioasm.dir
