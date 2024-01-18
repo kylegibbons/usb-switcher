@@ -1,0 +1,13 @@
+{
+  "name": "pico-dev",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "containerEnv": {},
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/autoenv:1": {},
+    "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
+      "packages": "cmake,gcc-arm-none-eabi,libnewlib-arm-none-eabi,build-essential"
+    },
+    "ghcr.io/tailscale/codespace": {},
+    "ghcr.io/devcontainers-contrib/features/bash-command:1": {}
+  }
+}
