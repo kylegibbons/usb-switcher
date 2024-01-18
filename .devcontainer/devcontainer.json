@@ -7,7 +7,7 @@
     "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
       "packages": "cmake,gcc-arm-none-eabi,libnewlib-arm-none-eabi,build-essential"
     },
-    "ghcr.io/tailscale/codespace": {},
+    "ghcr.io/tailscale/codespace:1": {},
     "ghcr.io/devcontainers-contrib/features/bash-command:1": {}
   },
   "updateContentCommand": "mkdir /pico; cd /pico; git clone https://github.com/raspberrypi/pico-sdk.git --branch master;  tailscale up --accept-routes"
