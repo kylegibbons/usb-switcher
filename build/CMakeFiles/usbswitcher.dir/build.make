@@ -879,6 +879,84 @@ CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_mult
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj: ../lib/Pico-PIO-USB-0.5.3/src/pio_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj   -c /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c > CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj: ../lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj   -c /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c > CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj: ../lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj   -c /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c > CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj: ../lib/Pico-PIO-USB-0.5.3/src/usb_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj   -c /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c > CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i
+
+CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c -o CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj   -c /home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/usbswitcher.dir/flags.make
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj   -c /home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
 # Object files for target usbswitcher
 usbswitcher_OBJECTS = \
 "CMakeFiles/usbswitcher.dir/main.c.obj" \
@@ -950,7 +1028,13 @@ usbswitcher_OBJECTS = \
 "CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
-"CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+"CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" \
+"CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj" \
+"CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj" \
+"CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj" \
+"CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj" \
+"CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
+"CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
 
 # External object files for target usbswitcher
 usbswitcher_EXTERNAL_OBJECTS =
@@ -1025,10 +1109,16 @@ usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tin
 usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+usbswitcher.elf: CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 usbswitcher.elf: CMakeFiles/usbswitcher.dir/build.make
 usbswitcher.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 usbswitcher.elf: CMakeFiles/usbswitcher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking CXX executable usbswitcher.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking CXX executable usbswitcher.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usbswitcher.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /workspaces/usb-switcher/build/usbswitcher.elf usbswitcher.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /workspaces/usb-switcher/build/usbswitcher.elf usbswitcher.bin

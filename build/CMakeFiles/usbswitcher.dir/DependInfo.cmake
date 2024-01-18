@@ -56,7 +56,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Release\""
+  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -115,6 +115,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/codespace/pico/pico-sdk/lib/tinyusb/hw"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "pico_pio_usb"
+  "../lib/Pico-PIO-USB-0.5.3/src"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/include"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -146,9 +150,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/codespace/pico/pico-sdk/src/common/pico_util/queue.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
@@ -174,6 +180,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+  "/workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj"
+  "/workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj"
+  "/workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj"
+  "/workspaces/usb-switcher/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj"
   "/workspaces/usb-switcher/main.c" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -214,7 +224,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Release\""
+  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -273,6 +283,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/codespace/pico/pico-sdk/lib/tinyusb/hw"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "pico_pio_usb"
+  "../lib/Pico-PIO-USB-0.5.3/src"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/include"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/workspaces/usb-switcher/build/CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -315,7 +329,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Release\""
+  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -374,6 +388,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/codespace/pico/pico-sdk/lib/tinyusb/hw"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "pico_pio_usb"
+  "../lib/Pico-PIO-USB-0.5.3/src"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/include"
+  "/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/include"
   )
 
 # Targets to which this target links.

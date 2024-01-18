@@ -167,3 +167,7 @@
 /workspaces/usb-switcher/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/edit_cache.dir
 /workspaces/usb-switcher/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 /workspaces/usb-switcher/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
+/workspaces/usb-switcher/build/pico_pio_usb/CMakeFiles/rebuild_cache.dir
+/workspaces/usb-switcher/build/pico_pio_usb/CMakeFiles/edit_cache.dir
+/workspaces/usb-switcher/build/pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir
+/workspaces/usb-switcher/build/pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir

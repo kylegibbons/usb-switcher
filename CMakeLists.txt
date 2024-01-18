@@ -17,6 +17,12 @@ add_executable(${PROJECT_NAME}
     main.c
 )
 
+# add pico-pio-usb library for examples
+set(PICO_PIO_USB_DIR "${CMAKE_CURRENT_LIST_DIR}/lib/Pico-PIO-USB-0.5.3")
+# the second argument to add_subdirectory is needed here because this isn't
+# a subdirectory, it's out of tree.
+add_subdirectory(${PICO_PIO_USB_DIR} pico_pio_usb)
+
 pico_enable_stdio_usb(${PROJECT_NAME}  1) 
 
 # Create map/bin/hex/uf2 files
