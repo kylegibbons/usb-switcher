@@ -13,4 +13,4 @@ RUN mkdir /pico && \
 
 # Install toolchain
 RUN apt update && \
-    && apt -y install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+    apt -y install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
