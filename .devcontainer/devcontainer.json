@@ -1,6 +1,6 @@
 {
   "name": "pico-dev",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "build": { "dockerfile": "Dockerfile" },
   "containerEnv": {},
   "features": {
     "ghcr.io/devcontainers-contrib/features/autoenv:1": {},
@@ -9,6 +9,5 @@
     },
     "ghcr.io/tailscale/codespace/tailscale:1": {},
     "ghcr.io/devcontainers-contrib/features/bash-command:1": {}
-  },
-  "updateContentCommand": "mkdir /pico; cd /pico; git clone https://github.com/raspberrypi/pico-sdk.git --branch master;  tailscale up --accept-routes"
+  }
 }
