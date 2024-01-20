@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ELF2UF2Build
-
-# Build rule for target.
-ELF2UF2Build: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ELF2UF2Build
-.PHONY : ELF2UF2Build
-
-# fast build rule for target.
-ELF2UF2Build/fast:
-	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
-.PHONY : ELF2UF2Build/fast
-
-#=============================================================================
 # Target rules for targets named usbswitcher
 
 # Build rule for target.
@@ -135,6 +122,19 @@ usbswitcher: cmake_check_build_system
 usbswitcher/fast:
 	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/build
 .PHONY : usbswitcher/fast
+
+#=============================================================================
+# Target rules for targets named ELF2UF2Build
+
+# Build rule for target.
+ELF2UF2Build: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ELF2UF2Build
+.PHONY : ELF2UF2Build
+
+# fast build rule for target.
+ELF2UF2Build/fast:
+	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
+.PHONY : ELF2UF2Build/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
@@ -201,1885 +201,1670 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-#=============================================================================
-# Target rules for targets named pico_pio_usb_usb_rx_pio_h
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 
-# Build rule for target.
-pico_pio_usb_usb_rx_pio_h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pico_pio_usb_usb_rx_pio_h
-.PHONY : pico_pio_usb_usb_rx_pio_h
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
 
-# fast build rule for target.
-pico_pio_usb_usb_rx_pio_h/fast:
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build
-.PHONY : pico_pio_usb_usb_rx_pio_h/fast
-
-#=============================================================================
-# Target rules for targets named pico_pio_usb_usb_tx_pio_h
-
-# Build rule for target.
-pico_pio_usb_usb_tx_pio_h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pico_pio_usb_usb_tx_pio_h
-.PHONY : pico_pio_usb_usb_tx_pio_h
-
-# fast build rule for target.
-pico_pio_usb_usb_tx_pio_h/fast:
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build
-.PHONY : pico_pio_usb_usb_tx_pio_h/fast
-
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
-
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.i: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.s: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-.PHONY : home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.obj: home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.i: home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.s: home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : home/codespace/pico-sdk/lib/tinyusb/src/tusb.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.obj: home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.i: home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.s: home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.obj: home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.i: home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.i: home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.s: home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.s: home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.obj: home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/mutex.obj: home/codespace/pico-sdk/src/common/pico_sync/mutex.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/mutex.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.i: home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.i
+home/codespace/pico-sdk/src/common/pico_sync/mutex.i: home/codespace/pico-sdk/src/common/pico_sync/mutex.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.i
+home/codespace/pico-sdk/src/common/pico_sync/mutex.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/mutex.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.s: home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.s
+home/codespace/pico-sdk/src/common/pico_sync/mutex.s: home/codespace/pico-sdk/src/common/pico_sync/mutex.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_sync/sem.c.s
+home/codespace/pico-sdk/src/common/pico_sync/mutex.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/mutex.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/mutex.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_time/time.obj: home/codespace/pico/pico-sdk/src/common/pico_time/time.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/sem.obj: home/codespace/pico-sdk/src/common/pico_sync/sem.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/time.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.c.obj
+home/codespace/pico-sdk/src/common/pico_sync/sem.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/sem.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_time/time.i: home/codespace/pico/pico-sdk/src/common/pico_time/time.c.i
+home/codespace/pico-sdk/src/common/pico_sync/sem.i: home/codespace/pico-sdk/src/common/pico_sync/sem.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/time.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.c.i
+home/codespace/pico-sdk/src/common/pico_sync/sem.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/sem.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_time/time.s: home/codespace/pico/pico-sdk/src/common/pico_time/time.c.s
+home/codespace/pico-sdk/src/common/pico_sync/sem.s: home/codespace/pico-sdk/src/common/pico_sync/sem.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/time.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/time.c.s
+home/codespace/pico-sdk/src/common/pico_sync/sem.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_sync/sem.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_sync/sem.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+home/codespace/pico-sdk/src/common/pico_time/time.obj: home/codespace/pico-sdk/src/common/pico_time/time.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+home/codespace/pico-sdk/src/common/pico_time/time.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/time.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+home/codespace/pico-sdk/src/common/pico_time/time.i: home/codespace/pico-sdk/src/common/pico_time/time.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+home/codespace/pico-sdk/src/common/pico_time/time.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/time.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+home/codespace/pico-sdk/src/common/pico_time/time.s: home/codespace/pico-sdk/src/common/pico_time/time.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+home/codespace/pico-sdk/src/common/pico_time/time.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/time.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/time.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.obj: home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.obj: home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.i: home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.i
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.i: home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.i
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.s: home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.s
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.s: home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/datetime.c.s
+home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.obj: home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+home/codespace/pico-sdk/src/common/pico_util/datetime.obj: home/codespace/pico-sdk/src/common/pico_util/datetime.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+home/codespace/pico-sdk/src/common/pico_util/datetime.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/datetime.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.i: home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.i
+home/codespace/pico-sdk/src/common/pico_util/datetime.i: home/codespace/pico-sdk/src/common/pico_util/datetime.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.i
+home/codespace/pico-sdk/src/common/pico_util/datetime.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/datetime.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.s: home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.s
+home/codespace/pico-sdk/src/common/pico_util/datetime.s: home/codespace/pico-sdk/src/common/pico_util/datetime.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/pheap.c.s
+home/codespace/pico-sdk/src/common/pico_util/datetime.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/datetime.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/datetime.c.s
 
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.obj: home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.obj
+home/codespace/pico-sdk/src/common/pico_util/pheap.obj: home/codespace/pico-sdk/src/common/pico_util/pheap.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.obj
+home/codespace/pico-sdk/src/common/pico_util/pheap.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/pheap.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.c.obj
 
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.i: home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.i
+home/codespace/pico-sdk/src/common/pico_util/pheap.i: home/codespace/pico-sdk/src/common/pico_util/pheap.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.i
+home/codespace/pico-sdk/src/common/pico_util/pheap.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/pheap.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.c.i
 
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.s: home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.s
+home/codespace/pico-sdk/src/common/pico_util/pheap.s: home/codespace/pico-sdk/src/common/pico_util/pheap.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/common/pico_util/queue.c.s
+home/codespace/pico-sdk/src/common/pico_util/pheap.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/pheap.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/pheap.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+home/codespace/pico-sdk/src/common/pico_util/queue.obj: home/codespace/pico-sdk/src/common/pico_util/queue.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+home/codespace/pico-sdk/src/common/pico_util/queue.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/queue.c.obj
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+home/codespace/pico-sdk/src/common/pico_util/queue.i: home/codespace/pico-sdk/src/common/pico_util/queue.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+home/codespace/pico-sdk/src/common/pico_util/queue.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/queue.c.i
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+home/codespace/pico-sdk/src/common/pico_util/queue.s: home/codespace/pico-sdk/src/common/pico_util/queue.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+home/codespace/pico-sdk/src/common/pico_util/queue.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/common/pico_util/queue.c.s
+.PHONY : home/codespace/pico-sdk/src/common/pico_util/queue.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
-
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
-
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.i
 
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
-
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s
+home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj
-
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj
-
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj
-
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.s
-
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
+home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
-
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.i: home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.s: home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.i: home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.s: home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.s
+home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s
-
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
-
-# target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
+home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
-
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.i: home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.s: home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.i: home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.s: home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
 
 # target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
 
 # target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
 
 # target to build an object file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
-
-# target to preprocess a source file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
-
-# target to generate assembly for a file
-home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-.PHONY : home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.obj: lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
 
 # target to build an object file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.i: lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
 
 # target to preprocess a source file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.s: lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
 
 # target to generate assembly for a file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.obj: lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
 
 # target to build an object file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.i: lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 
 # target to preprocess a source file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.s: lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.s
 
 # target to generate assembly for a file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.obj: lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 
 # target to build an object file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.i: lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 
 # target to preprocess a source file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.s: lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
 
 # target to generate assembly for a file
-lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.obj: lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
 
 # target to build an object file
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.obj
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.i: lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
 
 # target to preprocess a source file
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.i
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.s: lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
 
 # target to generate assembly for a file
-lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s
-.PHONY : lib/Pico-PIO-USB-0.5.3/src/usb_crc.c.s
+home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-main.obj: main.c.obj
+main.obj: main.cpp.obj
 
 .PHONY : main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.c.obj
-.PHONY : main.c.obj
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.c.s
-.PHONY : main.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+usb_descriptors.obj: usb_descriptors.cpp.obj
+
+.PHONY : usb_descriptors.obj
+
+# target to build an object file
+usb_descriptors.cpp.obj:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/usb_descriptors.cpp.obj
+.PHONY : usb_descriptors.cpp.obj
+
+usb_descriptors.i: usb_descriptors.cpp.i
+
+.PHONY : usb_descriptors.i
+
+# target to preprocess a source file
+usb_descriptors.cpp.i:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/usb_descriptors.cpp.i
+.PHONY : usb_descriptors.cpp.i
+
+usb_descriptors.s: usb_descriptors.cpp.s
+
+.PHONY : usb_descriptors.s
+
+# target to generate assembly for a file
+usb_descriptors.cpp.s:
+	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/usb_descriptors.cpp.s
+.PHONY : usb_descriptors.cpp.s
 
 # Help Target
 help:
@@ -2089,221 +1874,198 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ELF2UF2Build"
 	@echo "... usbswitcher"
+	@echo "... ELF2UF2Build"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default"
 	@echo "... PioasmBuild"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
-	@echo "... pico_pio_usb_usb_rx_pio_h"
-	@echo "... pico_pio_usb_usb_tx_pio_h"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.obj"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.i"
-	@echo "... home/codespace/pico/pico-sdk/lib/tinyusb/src/tusb.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/critical_section.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/lock_core.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/mutex.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/sem.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/sem.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_sync/sem.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/time.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/time.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/time.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_time/timeout_helper.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/datetime.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/datetime.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/datetime.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/pheap.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/pheap.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/pheap.s"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/queue.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/queue.i"
-	@echo "... home/codespace/pico/pico-sdk/src/common/pico_util/queue.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_printf/printf.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
-	@echo "... home/codespace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb.obj"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb.i"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb.s"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.obj"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.i"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_device.s"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.obj"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.i"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/pio_usb_host.s"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/usb_crc.obj"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/usb_crc.i"
-	@echo "... lib/Pico-PIO-USB-0.5.3/src/usb_crc.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... home/codespace/pico-sdk/lib/tinyusb/src/tusb.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/critical_section.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/critical_section.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/critical_section.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/lock_core.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/lock_core.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/lock_core.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/mutex.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/mutex.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/mutex.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/sem.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/sem.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_sync/sem.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/time.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/time.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/time.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/timeout_helper.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/timeout_helper.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_time/timeout_helper.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/datetime.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/datetime.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/datetime.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/pheap.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/pheap.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/pheap.s"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/queue.obj"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/queue.i"
+	@echo "... home/codespace/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_claim/claim.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_flash/flash.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_sync/sync.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_timer/timer.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_uart/uart.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_divider/divider.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_init_rom.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_math.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_init_rom.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_math.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_platform/platform.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... home/codespace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... usb_descriptors.obj"
+	@echo "... usb_descriptors.i"
+	@echo "... usb_descriptors.s"
 .PHONY : help
 
 

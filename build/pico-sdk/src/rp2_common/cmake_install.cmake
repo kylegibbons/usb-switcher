@@ -1,4 +1,4 @@
-# Install script for directory: /home/codespace/pico/pico-sdk/src/rp2_common
+# Install script for directory: /home/codespace/pico-sdk/src/rp2_common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -79,7 +79,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/pico_stdio_uart/cmake_install.cmake")
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/cmsis/cmake_install.cmake")
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/tinyusb/cmake_install.cmake")
-  include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/pico_stdio_usb/cmake_install.cmake")
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/pico_i2c_slave/cmake_install.cmake")
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/pico_async_context/cmake_install.cmake")
   include("/workspaces/usb-switcher/build/pico-sdk/src/rp2_common/pico_btstack/cmake_install.cmake")

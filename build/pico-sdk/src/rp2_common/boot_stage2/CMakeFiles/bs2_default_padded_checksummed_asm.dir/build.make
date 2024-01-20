@@ -58,7 +58,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/python3.8 /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+	cd /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/python3.8 /home/codespace/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
@@ -81,6 +81,6 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend:
-	cd /workspaces/usb-switcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/usb-switcher /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/usb-switcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/usb-switcher /home/codespace/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 

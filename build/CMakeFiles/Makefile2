@@ -53,24 +53,21 @@ CMAKE_BINARY_DIR = /workspaces/usb-switcher/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ELF2UF2Build.dir/all
 all: CMakeFiles/usbswitcher.dir/all
+all: CMakeFiles/ELF2UF2Build.dir/all
 all: pico-sdk/all
-all: pico_pio_usb/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: pico-sdk/preinstall
-preinstall: pico_pio_usb/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ELF2UF2Build.dir/clean
 clean: CMakeFiles/usbswitcher.dir/clean
+clean: CMakeFiles/ELF2UF2Build.dir/clean
 clean: pico-sdk/clean
-clean: pico_pio_usb/clean
 
 .PHONY : clean
 
@@ -492,7 +489,6 @@ pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_stdio_semihosting/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_stdio_uart/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/cmsis/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/tinyusb/all
-pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_stdio_usb/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_i2c_slave/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_async_context/all
 pico-sdk/src/rp2_common/all: pico-sdk/src/rp2_common/pico_btstack/all
@@ -554,7 +550,6 @@ pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_stdio_semihosti
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_stdio_uart/preinstall
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/cmsis/preinstall
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/tinyusb/preinstall
-pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_stdio_usb/preinstall
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_i2c_slave/preinstall
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_async_context/preinstall
 pico-sdk/src/rp2_common/preinstall: pico-sdk/src/rp2_common/pico_btstack/preinstall
@@ -616,7 +611,6 @@ pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_stdio_semihosting/cl
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_stdio_uart/clean
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/cmsis/clean
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/tinyusb/clean
-pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_stdio_usb/clean
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_i2c_slave/clean
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_async_context/clean
 pico-sdk/src/rp2_common/clean: pico-sdk/src/rp2_common/pico_btstack/clean
@@ -1646,24 +1640,6 @@ pico-sdk/src/rp2_common/pico_stdio_uart/clean:
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_uart/clean
 
 #=============================================================================
-# Directory level rules for directory pico-sdk/src/rp2_common/pico_stdio_usb
-
-# Recursive "all" directory target.
-pico-sdk/src/rp2_common/pico_stdio_usb/all:
-
-.PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/all
-
-# Recursive "preinstall" directory target.
-pico-sdk/src/rp2_common/pico_stdio_usb/preinstall:
-
-.PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/preinstall
-
-# Recursive "clean" directory target.
-pico-sdk/src/rp2_common/pico_stdio_usb/clean:
-
-.PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/clean
-
-#=============================================================================
 # Directory level rules for directory pico-sdk/src/rp2_common/pico_stdlib
 
 # Recursive "all" directory target.
@@ -1736,67 +1712,19 @@ pico-sdk/tools/clean:
 .PHONY : pico-sdk/tools/clean
 
 #=============================================================================
-# Directory level rules for directory pico_pio_usb
-
-# Recursive "all" directory target.
-pico_pio_usb/all:
-
-.PHONY : pico_pio_usb/all
-
-# Recursive "preinstall" directory target.
-pico_pio_usb/preinstall:
-
-.PHONY : pico_pio_usb/preinstall
-
-# Recursive "clean" directory target.
-pico_pio_usb/clean: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/clean
-pico_pio_usb/clean: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/clean
-
-.PHONY : pico_pio_usb/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ELF2UF2Build.dir
-
-# All Build rule for target.
-CMakeFiles/ELF2UF2Build.dir/all:
-	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/depend
-	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ELF2UF2Build"
-.PHONY : CMakeFiles/ELF2UF2Build.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ELF2UF2Build.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 0
-.PHONY : CMakeFiles/ELF2UF2Build.dir/rule
-
-# Convenience name for target.
-ELF2UF2Build: CMakeFiles/ELF2UF2Build.dir/rule
-
-.PHONY : ELF2UF2Build
-
-# clean rule for target.
-CMakeFiles/ELF2UF2Build.dir/clean:
-	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/clean
-.PHONY : CMakeFiles/ELF2UF2Build.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/usbswitcher.dir
 
 # All Build rule for target.
 CMakeFiles/usbswitcher.dir/all: CMakeFiles/ELF2UF2Build.dir/all
 CMakeFiles/usbswitcher.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-CMakeFiles/usbswitcher.dir/all: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/all
-CMakeFiles/usbswitcher.dir/all: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/all
 	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/depend
 	$(MAKE) -f CMakeFiles/usbswitcher.dir/build.make CMakeFiles/usbswitcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target usbswitcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92 "Built target usbswitcher"
 .PHONY : CMakeFiles/usbswitcher.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/usbswitcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 82
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/usbswitcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 0
 .PHONY : CMakeFiles/usbswitcher.dir/rule
@@ -1812,13 +1740,40 @@ CMakeFiles/usbswitcher.dir/clean:
 .PHONY : CMakeFiles/usbswitcher.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ELF2UF2Build.dir
+
+# All Build rule for target.
+CMakeFiles/ELF2UF2Build.dir/all:
+	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/depend
+	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ELF2UF2Build"
+.PHONY : CMakeFiles/ELF2UF2Build.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ELF2UF2Build.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 0
+.PHONY : CMakeFiles/ELF2UF2Build.dir/rule
+
+# Convenience name for target.
+ELF2UF2Build: CMakeFiles/ELF2UF2Build.dir/rule
+
+.PHONY : ELF2UF2Build
+
+# clean rule for target.
+CMakeFiles/ELF2UF2Build.dir/clean:
+	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/clean
+.PHONY : CMakeFiles/ELF2UF2Build.dir/clean
+
+#=============================================================================
 # Target rules for target pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir
 
 # All Build rule for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=19,20 "Built target bs2_default_padded_checksummed_asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=20,21 "Built target bs2_default_padded_checksummed_asm"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1845,7 +1800,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=18 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=19 "Built target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1872,7 +1827,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=16,17 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=17,18 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1899,7 +1854,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all:
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/depend
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15 "Built target PioasmBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target PioasmBuild"
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1926,7 +1881,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/clean:
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=21 "Built target cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=22 "Built target cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1945,60 +1900,6 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_d
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
 	$(MAKE) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
-
-#=============================================================================
-# Target rules for target pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir
-
-# All Build rule for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/depend
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=22 "Built target pico_pio_usb_usb_rx_pio_h"
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/all
-
-# Build rule for subdir invocation for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 0
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/rule
-
-# Convenience name for target.
-pico_pio_usb_usb_rx_pio_h: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/rule
-
-.PHONY : pico_pio_usb_usb_rx_pio_h
-
-# clean rule for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/clean:
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/clean
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir/clean
-
-#=============================================================================
-# Target rules for target pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir
-
-# All Build rule for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/all: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/all
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/depend
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=23 "Built target pico_pio_usb_usb_tx_pio_h"
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/all
-
-# Build rule for subdir invocation for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/usb-switcher/build/CMakeFiles 0
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/rule
-
-# Convenience name for target.
-pico_pio_usb_usb_tx_pio_h: pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/rule
-
-.PHONY : pico_pio_usb_usb_tx_pio_h
-
-# clean rule for target.
-pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/clean:
-	$(MAKE) -f pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/build.make pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/clean
-.PHONY : pico_pio_usb/CMakeFiles/pico_pio_usb_usb_tx_pio_h.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

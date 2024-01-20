@@ -4,10 +4,60 @@
   "containerEnv": {},
   "features": {
     "ghcr.io/devcontainers-contrib/features/autoenv:1": {},
-    "ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-      "packages": "cmake,gcc-arm-none-eabi,libnewlib-arm-none-eabi,build-essential"
-    },
     "ghcr.io/tailscale/codespace/tailscale:1": {},
-    "ghcr.io/devcontainers-contrib/features/bash-command:1": {}
+  },
+  "remoteEnv": {
+    "PICO_SDK_PATH": "/home/codespace/pico-sdk"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "jeff-hykin.better-cpp-syntax",
+        "aaron-bond.better-comments",
+        "ms-vscode.cpptools-themes",
+        "ms-vscode-remote.remote-containers",
+        "hediet.vscode-drawio",
+        "alefragnani.numbered-bookmarks",
+        "ms-vscode.vscode-serial-monitor",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "streetsidesoftware.code-spell-checker",
+        "mcu-debug.debug-tracker-vscode",
+        "marus25.cortex-debug",
+        "ms-azuretools.vscode-docker",
+        "EditorConfig.EditorConfig",
+        "github.vscode-github-actions",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "eamodio.gitlens",
+        "mcu-debug.memory-view",
+        "mcu-debug.rtos-views",
+        "pflannery.vscode-versionlens",
+        "mcu-debug.peripheral-viewer"
+      ],
+      "settings": {
+        // These settings tweaks to the cmake plugin will ensure
+        // that you debug using cortex-debug instead of trying to launch
+        // a binary on the host
+        "cmake.statusbar.advanced": {
+            "debug": {
+                "visibility": "hidden"
+            },
+            "launch": {
+                "visibility": "hidden"
+            },
+            "build": {
+                "visibility": "default"
+            },
+            "buildTarget": {
+                "visibility": "hidden"
+            }
+        },
+        "cmake.buildBeforeRun": true,
+        "cmake.configureOnOpen": false
+      }
+    }
   }
 }

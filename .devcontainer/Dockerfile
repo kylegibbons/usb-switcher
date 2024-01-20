@@ -3,8 +3,7 @@ FROM mcr.microsoft.com/devcontainers/universal:2
 # 
 
 # Install Pico SDK
-RUN mkdir /pico && \
-    cd /pico && \
+RUN cd /home/codespace && \
     git clone https://github.com/raspberrypi/pico-sdk.git --branch master && \
     cd pico-sdk && \
     git submodule update --init && \

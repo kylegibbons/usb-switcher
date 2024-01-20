@@ -58,9 +58,9 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/progress.
 include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
-pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj: /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
+pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj: /home/codespace/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
-	cd /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/compile_time_choice.S.obj   -c /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
+	cd /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/compile_time_choice.S.obj   -c /home/codespace/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
 
 # Object files for target bs2_default
 bs2_default_OBJECTS = \
@@ -71,7 +71,7 @@ bs2_default_EXTERNAL_OBJECTS =
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make
-pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2/boot_stage2.ld
+pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: /home/codespace/pico-sdk/src/rp2_common/boot_stage2/boot_stage2.ld
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/usb-switcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking ASM executable bs2_default.elf"
 	cd /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bs2_default.dir/link.txt --verbose=$(VERBOSE)
@@ -88,6 +88,6 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend:
-	cd /workspaces/usb-switcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/usb-switcher /home/codespace/pico/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/usb-switcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/usb-switcher /home/codespace/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2 /workspaces/usb-switcher/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
 

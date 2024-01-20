@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/codespace/pico/pico-sdk/src/common/boot_uf2/include/boot/uf2.h
+/home/codespace/pico-sdk/src/common/boot_uf2/include/boot/uf2.h
 stdint.h
 -
 assert.h
 -
 
-/home/codespace/pico/pico-sdk/tools/elf2uf2/elf.h
+/home/codespace/pico-sdk/tools/elf2uf2/elf.h
 stdint.h
 -
 
-/home/codespace/pico/pico-sdk/tools/elf2uf2/main.cpp
+/home/codespace/pico-sdk/tools/elf2uf2/main.cpp
 cstdio
 -
 map
@@ -32,7 +32,7 @@ cstdarg
 algorithm
 -
 boot/uf2.h
-/home/codespace/pico/pico-sdk/tools/elf2uf2/boot/uf2.h
+/home/codespace/pico-sdk/tools/elf2uf2/boot/uf2.h
 elf.h
-/home/codespace/pico/pico-sdk/tools/elf2uf2/elf.h
+/home/codespace/pico-sdk/tools/elf2uf2/elf.h
 
